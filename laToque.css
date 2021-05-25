@@ -1,0 +1,96 @@
+@font-face{font-family: 'alex';src:url('./fonts/AlexBrush-Regular.ttf');}
+/*page 1*/
+#fond{background: url('./images/imageFond.jpg');width: 100%;background-size: cover;z-index:1;display:flex;flex-direction: row;}
+.bloc-left{background-color: rgb(29, 28, 27);opacity:0.7;z-index:2;text-align: center;margin-top: 80px;padding-bottom: 80px;margin-bottom: 100px;}
+#logo{width: 100%;opacity:1;z-index:3;margin-top: 20px;}
+#logo h1{position:absolute;top:120px;margin-left: 180px;font-family: 'alex';font-weight: bold;}
+#logo img{border: 3px double rgb(243, 192, 126);width: 400px;}
+#nav{text-align: center;} 
+#nav p{font-size: 2.5rem;color:rgb(243, 192, 126);font-family: 'alex';font-weight: bold;}#nav a:hover{text-decoration: none;}
+.nav-item{margin-top: 20px;}
+li{list-style-type:none;margin-bottom: 20px;}
+.bloc-right{color:rgb(243, 192, 126);width: 600px; ;position: absolute;right: 10px;background-color: rgb(29, 28, 27);opacity:0.7;margin-top: 80px;}
+/*page 2*/
+#fond2, #fond4{background-color: rgb(243, 192, 126);display: flex;flex-direction: row; justify-content: space-around;flex-wrap: wrap;}
+#fondCarte{background: url('./images/fondCarte.jpg');height: 800px;width: 450px;margin-top: 100px;margin-bottom: 100px;transition: all 0.5s ease;}
+#fondCarte:hover{transform: rotate(-15deg);}
+#fondCarte h2{color:rgb(243, 192, 126);margin-left: 80px;margin-top: 70px;font-family: 'alex';font-size: 2.5rem;}
+#fondCarte p{color:rgb(243, 192, 126);margin-left: 80px;margin-top: 100px;font-family: 'alex';font-size: 1.5rem;}
+/*page 3*/
+#fond3{background-color:rgb(29, 28, 27);width: 100%;background-size: cover;text-align: center;}
+#carrousel{padding-top: 100px;padding-bottom: 100px;}
+video{height: 800px;border:5px double rgb(243, 192, 126);}
+#carrousel p{color:rgb(243, 192, 126);font-family: 'alex';font-size: 2rem;}
+#fond4{display: flex;flex-direction: row;}
+#fondCarte2{background: url('./images/fondCarte.jpg');background-size: cover  ;height: 800px;width: 550px;margin-top: 100px;margin-bottom: 100px;}
+#fondCarte3{background: url('./images/fondCarte.jpg');background-size: cover ;width: 600px;height:900px;margin-top: 100px;margin-bottom:100px;}
+#fondCarte2 h2, #fondCarte3 h2{color:rgb(243, 192, 126);margin-left: 80px;margin-top: 70px;font-family: 'alex';font-size: 2.5rem;}
+#fondCarte2 p{color:rgb(243, 192, 126); font-family: 'alex';margin-left: 80px;margin-top: 100px;font-size: 1.5rem;}
+#formulaire{margin-left: 100px;}#formulaire p{color:rgb(243, 192, 126);}
+small{color:rgb(243, 192, 126);}
+.footer{display: flex;flex-direction: row;}
+.footer p{color:rgb(243, 192, 126);margin-right: 30px;margin-bottom: 10px;} .footer a{text-decoration: none;color:rgb(243, 192, 126);}
+a:active{color:rgb(243, 192, 126);}
+
+@media all and (max-device-width:480px)/*iphone6/7/8plus*/
+{
+    #fond{flex-direction: column;}
+    #logo h1{position:absolute;top: 100px;margin-left:125px ;font-size: 1.2rem;}
+    #logo img{width: 265px;}
+    .bloc-left{margin-top: 5px;}
+    .bloc-right{max-width:390px ;position:absolute;right: 10px;top:750px;}
+    #fond2{padding-top:400px;padding-bottom: 50px;}
+    #fondCarte{margin-bottom: 0px;}
+    #fondCarte p{color:rgb(243, 192, 126);margin-left: 80px;margin-top: 80px;font-family: 'alex';font-size: 1.5rem;}
+    #fondCarte2{margin-bottom: 30px;}
+    #fondCarte3{margin-bottom: 50px;margin-top: 10px;height: 1050px;}
+    #formulaire{margin-left:80px;}
+    video{height: 150px;}
+    .footer{flex-direction: column;padding-bottom: 20px;}
+   
+}
+@media all and (max-device-width:375px)/*iphone6/7/8*/
+{
+    .bloc-right{max-width: 360px;}
+}
+
+@media all and (max-device-width:320px)/*iphone5*/
+{
+    #fond{flex-direction: column;}
+    #logo h1{position:absolute;top: 100px;margin-left:85px ;font-size: 1.2rem;}
+    #logo img{width: 265px;}
+    .bloc-left{margin-top: 5px;}
+    .bloc-right{max-width:290px ;position:absolute;right: 15px;top:750px;}
+    #fond2{padding-top:350px;padding-bottom: 50px;}
+    #fondCarte{margin-bottom: 0px;}
+    #fondCarte p{color:rgb(243, 192, 126);margin-left: 80px;margin-top: 80px;font-family: 'alex';font-size: 1.5rem;}
+    #fondCarte2{margin-bottom: 30px;}
+    #fondCarte3{margin-bottom: 50px;margin-top: 10px;height: 1050px;}
+    #formulaire{margin-left:80px;}
+    video{height: 150px;}
+    .footer{flex-direction: column;padding-bottom: 20px;}
+}
+
+@media all and (max-device-width:768px)/*ipad*/
+{
+    #fond{flex-direction: column;}
+    #logo h1{position:absolute;top: 100px;margin-left:125px ;font-size: 1.2rem;}
+    #logo img{width: 265px;}
+    .bloc-left{margin-top: 5px;}
+    .bloc-right{width:750px ;position:absolute;right: 10px;top:750px;}
+    #fond2{padding-top:400px;padding-bottom: 50px;}
+    #fondCarte{margin-bottom: 0px;}
+    #fondCarte p{color:rgb(243, 192, 126);margin-left: 80px;margin-top: 80px;font-family: 'alex';font-size: 1.5rem;}
+    #fondCarte2{margin-bottom: 30px;}
+    #fondCarte3{margin-bottom: 50px;margin-top: 10px;height: 1050px;}
+    #formulaire{margin-left:80px;}
+    video{height: 250px;}
+    .footer{flex-direction: column;padding-bottom: 20px;}
+}
+
+@media all and (max-device-width:1024px)/*ipad pro*/
+{
+    #logo img{width: 220px;}
+    #logo h1{top:80px; margin-left:60px;font-size: 1.2rem;}
+    #fond3 video{height: 400px;}
+}
